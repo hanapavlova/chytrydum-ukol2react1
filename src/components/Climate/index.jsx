@@ -12,7 +12,7 @@ export const Climate = ({temperature, humidity}) => {
     return (
     <div className="climate">
 <div className="climate__icon">
-    <img src={temp}/>
+    <img src={temp} alt='thermometer'/>
 </div>
 <div className="climate__content">
     <div className="climate__temperature">{grade}&deg;C</div>

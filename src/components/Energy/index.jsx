@@ -7,7 +7,7 @@ export const Energy = ({electricity, water}) => {
     <div className="energy">
         <div className="energy__source">
             <div className="energy__icon">
-                <img src={electricityPicture}/>
+                <img src={electricityPicture} alt = 'electricity'/>
             </div>
             <div className="energy__consumption">
                 <div className="energy__description">Elektřina</div>
@@ -16,7 +16,7 @@ export const Energy = ({electricity, water}) => {
         </div>
         <div className="energy__source">
             <div className="energy__icon">
-                <img src={waterPicture}/>
+                <img src={waterPicture} alt = 'drop of water'/>
             </div>
             <div className="energy__consumption">
                 <div className="energy__description">Voda</div>

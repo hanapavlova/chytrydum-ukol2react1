@@ -5,14 +5,18 @@ import blindsOpen from './blinds-open.svg';
 
 export const Blinds = ({state}) => {
     
-    const [isOpen, setIsOpen] = useState(state)
+        const [isOpen, setIsOpen] = useState(state === 'open')
+    
         const handleClick = () => {
             setIsOpen(!isOpen)}
     
     return (
     <div className="blinds">
 <div className="blinds__icon">
-    <img src={isOpen ? blindsOpen : blindsClosed}/>
+    <img
+        src={isOpen ? blindsOpen : blindsClosed}
+        alt={isOpen ? 'blinds open' : 'blinds closed'}
+    />
 </div>
 <div className="blinds__name">
     Žaluzie
